@@ -43,7 +43,9 @@ const Form = () => {
           {...register("email")}
           className="w-[15rem] h-8 rounded p-2"
         />
-        <p className="text-red-600 text-[12px]">{errors.email?.message}</p>
+        <p className="text-red-600 text-[12px] tracking-widest">
+          {errors.email?.message}
+        </p>
         <input
           type="number"
           placeholder="your age"
